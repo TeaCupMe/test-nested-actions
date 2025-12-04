@@ -3,6 +3,8 @@ name: action1
 on:
   workflow_dispatch:
   repository_dispatch: 
+  schedule:
+    - cron: "0 21 * * THU"
 
 jobs:
   test-job:
