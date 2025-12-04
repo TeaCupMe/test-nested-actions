@@ -1,7 +1,9 @@
 on:
   workflow_run: 
     types: completed
-    workflows: "*"
+    workflows: ["action1", "action2"]
+    branches: 
+      - "*"
 
 
 jobs:
