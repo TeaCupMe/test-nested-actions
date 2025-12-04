@@ -12,7 +12,7 @@ jobs:
     steps:
       - run: |
           echo "${{github.event.workflow_run.conclusion}}"
-          echo "${{github.event.workflow_run.triggering_actor.type}}"
+          echo "${{github.event.workflow_run.triggering_actor.name}}"
   notify-on-failed:
     runs-on: ubuntu-latest
     # if: github.event.workflow_run.conclusion == 'failure'
